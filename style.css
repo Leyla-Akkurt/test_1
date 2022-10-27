@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    color:black;
+    display:grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns:40% 40% 20% ;
+
+    grid-template-areas: "greenbox  greenbox greenbox"
+                          "redbox     yellowbox bluebox"
+                          "orangebox  orangebox  bluebox";
+
+}
+.green{
+    background-color:green;
+   
+    grid-area:greenbox;
+}
+.red{
+    background-color:red;
+    
+    grid-area:redbox;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "boxA boxB"
+    "boxC boxD";
+    gap:1px;
+    align-items: center;
+    
+   
+}
+.yellow{
+    background-color:yellow;
+    
+    grid-area:yellowbox;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "box1 box2"
+    "box3 box4";
+    gap:1px;
+    align-items: center;
+    
+}
+.box1{
+    grid-area:box1;
+    
+}
+.box2{
+    grid-area:box2;
+}
+.box3{
+    grid-area:box3;
+}
+.box4{
+    grid-area:box4;
+}
+.boxA{
+    grid-area:boxA;
+}
+.boxB{
+    grid-area:boxB;
+}
+.boxC{
+    grid-area:boxC;
+}
+.boxD{
+    grid-area:boxD;
+}
+.blue{
+    background-color:blue;
+    
+    grid-area:bluebox;
+}
+.orange{
+    background-color:orange;
+    width:80%;
+    height:20%;
+    grid-area:orangebox;
+}
+.box{
+    background-color: white;
+    width:2em;
+    height:2em;
+}
